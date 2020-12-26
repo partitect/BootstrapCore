@@ -8,12 +8,11 @@
     <link href="~/css/main.min.css" rel="stylesheet" />
 </head>
 <body>
-    @Html.Partial("Header")
+    @await Html.PartialAsync("Header")
     <main>
         @RenderBody()
     </main>
-    @Html.Partial("Footer")
-
+    @await Html.PartialAsync("Footer")
     <script src="~/lib/jquery/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>

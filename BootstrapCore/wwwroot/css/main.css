@@ -12,3 +12,12 @@
 .card img {
   height: 300px;
   object-fit: cover; }
+
+.social-media-list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .social-media-list li {
+    float: left !important;
+    margin-right: 20px;
+    color: red; }

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<About>
+@{
+    string menuClass(string page)
+    {
+        return ViewBag.activePage == page ? "text-primary" : "text-danger";
+    };
+
+}
+
+<ul class="list-unstyled">
+    <li><a class="@menuClass("home")" asp-controller="home" asp-action="index">Anasayfa</a></li>
+    <li><a class="@menuClass("about")" asp-controller="about" asp-action="index">Hakkımızda</a>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li><a href="@item.link">@item.title</a></li>
+        }
+    </ul>
+    </li>
+    <li><a class="@menuClass("contact")" asp-controller="contact" asp-action="index">İletişim</a></li>
+</ul>

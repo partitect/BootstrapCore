@@ -1,0 +1,11 @@
+﻿@model IEnumerable<SocialMedia>
+
+<div class="container">
+    <ul class="social-media-list">
+        @foreach (var item in Model)
+        {
+            <li><a href="@item.link">@item.title</a></li>
+        }
+
+    </ul>
+</div>

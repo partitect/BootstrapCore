@@ -5,15 +5,11 @@ using System.Threading.Tasks;
 
 namespace BootstrapCore.Models
 {
-
-	public class Albums
+	public class About
 	{
-
 		public int id { get; set; }
 		public string title { get; set; }
-		public string desc { get; set; }
-		public string imgPath { get; set; }
-		public string date { get; set; }
+		public string link { get; set; }
 
 	}
 }

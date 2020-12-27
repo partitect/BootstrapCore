@@ -8,10 +8,13 @@
     <link href="~/css/main.min.css" rel="stylesheet" />
 </head>
 <body>
-    @await Html.PartialAsync("Header")
+    @await Component.InvokeAsync("Header")
+
+
     <main>
         @RenderBody()
     </main>
+    @await Component.InvokeAsync("Footer")
     @await Html.PartialAsync("Footer")
     <script src="~/lib/jquery/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>

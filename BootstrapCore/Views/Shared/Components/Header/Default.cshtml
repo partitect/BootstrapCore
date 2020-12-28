@@ -2,20 +2,35 @@
 @{
     string menuClass(string page)
     {
-        return ViewBag.activePage == page ? "text-primary" : "text-danger";
+        return ViewBag.activePage == page ? "active" : "";
     };
 
 }
 
-<ul class="list-unstyled">
-    <li><a class="@menuClass("home")" asp-controller="home" asp-action="index">Anasayfa</a></li>
-    <li><a class="@menuClass("about")" asp-controller="about" asp-action="index">Hakkımızda</a>
-    <ul>
-        @foreach (var item in Model)
-        {
-            <li><a href="@item.link">@item.title</a></li>
-        }
-    </ul>
-    </li>
-    <li><a class="@menuClass("contact")" asp-controller="contact" asp-action="index">İletişim</a></li>
-</ul>
+<div class="ui menu borderless nav-menu">
+    <div class="ui container">
+        <a class="item text-item" href="index.html">
+            <h1>Busipage</h1>
+        </a>
+        <a class="item @menuClass("home")" asp-controller="home" asp-action="index">Anasayfa</a>
+        <a class="item @menuClass("about")" asp-controller="about" asp-action="index">Hakkımızda</a>
+
+        <a class="item @menuClass("contact")" asp-controller="contact" asp-action="index">İletişim</a>
+
+        <div class="right menu">
+            <div class="ui dropdown item">
+                Hızlı Erişim <i class="dropdown icon"></i>
+                <div class="menu">
+                    @foreach (var item in Model)
+                    {
+                        <a class="item" href="@item.link">@item.title</a>
+                    }
+                </div>
+            </div>
+            <div class="item">
+                <div class="ui primary button">Sign Up</div>
+            </div>
+        </div>
+
+    </div>
+</div>

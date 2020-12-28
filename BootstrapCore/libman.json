@@ -161,6 +161,10 @@
         "scss/utilities/_visibility.scss",
         "scss/vendor/_rfs.scss"
       ]
+    },
+    {
+      "library": "fomantic-ui@2.8.7",
+      "destination": "wwwroot/lib/fomantic-ui/"
     }
   ]
 }

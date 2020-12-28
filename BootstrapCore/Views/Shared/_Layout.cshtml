@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewData["Title"]</title>
+    <link href="~/lib/fomantic-ui/semantic.min.css" rel="stylesheet" />
     <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/css/main.min.css" rel="stylesheet" />
 </head>
@@ -11,12 +12,13 @@
     @await Component.InvokeAsync("Header")
 
 
-    <main>
+    <div class="pusher">
         @RenderBody()
-    </main>
+    </div>
     @await Component.InvokeAsync("Footer")
     @await Html.PartialAsync("Footer")
     <script src="~/lib/jquery/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/fomantic-ui/semantic.min.js"></script>
+    <script src="~/js/main.js"></script>
 </body>
 </html>

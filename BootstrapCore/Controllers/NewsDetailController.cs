@@ -10,9 +10,10 @@ namespace BootstrapCore.Controllers
 {
 	public class NewsDetailController : Controller
 	{
-		[Route("/news/{title}-{id}-karatekin")]
+		[Route("/news/{title}/{id}/karatekin")]
 		public IActionResult Index(string title,int id)
 		{
+			
 			List<News> news = new List<News> {
 			new News{id = 1, title = "Edirnede, barajlarda doluluk oranı yüzde 46ya ulaştı", imgPath = "/assets/img/1.jpg", desc = "Birinci Haberin Başlığı", date = DateTime.Now.AddDays(-10) },
 			new News{ id = 2, title = "Haber Başlığı 2", imgPath = "/assets/img/2.jpg", desc = "İkinci Haberin Başlığı", date = DateTime.Now.AddDays(-22) },

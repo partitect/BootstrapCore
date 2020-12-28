@@ -9,7 +9,23 @@ namespace BootstrapCore.Tools
 	{
 		public static string KarakterDuzelt(string link)
 		{
-			return link.ToLower().Replace(" ", "-").Replace("ü", "u").Replace("ö", "o").Replace("ş", "s").Replace("ç", "c").Replace("ğ", "g").Replace("ı", "i").Replace("'", "").Replace("&", "-");
-		}
+            string Temp = link.ToLower();
+            Temp = Temp.Replace("-", ""); Temp = Temp.Replace(" ", "-");
+            Temp = Temp.Replace("ç", "c"); Temp = Temp.Replace("ğ", "g");
+            Temp = Temp.Replace("ı", "i"); Temp = Temp.Replace("ö", "o");
+            Temp = Temp.Replace("ş", "s"); Temp = Temp.Replace("ü", "u");
+            Temp = Temp.Replace("\"", ""); Temp = Temp.Replace("/", "");
+            Temp = Temp.Replace("(", ""); Temp = Temp.Replace(")", "");
+            Temp = Temp.Replace("{", ""); Temp = Temp.Replace("}", "");
+            Temp = Temp.Replace("%", ""); Temp = Temp.Replace("&", "");
+            Temp = Temp.Replace("+", ""); Temp = Temp.Replace(".", "");
+            Temp = Temp.Replace("?", ""); Temp = Temp.Replace(",", "");
+            Temp = Temp.Replace("'", "-"); Temp = Temp.Replace("!", "");
+            Temp = Temp.Replace("amp;", ""); Temp = Temp.Replace(":", "-");
+            Temp = Temp.Replace("#", "");
+            Temp = Temp.Replace(";", "");
+
+            return Temp;
+        }
 	}
 }

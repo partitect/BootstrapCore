@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Product>
+@{ 
+    string[] sehirler = { "İstanbul", "Ankara", "İzmir", "Bursa" };
+}
+<h1>TAG HELPER TESTLERİ</h1>
+<hr />
+<button tip="danger"></button>
+<img src="~/contents/slide/1.jpg" tur="yuvarlak"/>
+<ozelliste items="@sehirler"></ozelliste>
+<ozelliste items="Model.Select(s=>s.Name).ToArray()"></ozelliste>
+<modal modal-id="modal1" content="Merhaba İçerik Kısmı" title="DİKKAT"></modal>
+<modal modal-id="modal2" content="@Model.FirstOrDefault().Description" title="UYARI"></modal>
+
+<input type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal2" value="GETİR"/>

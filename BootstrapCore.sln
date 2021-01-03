@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootstrapCore", "BootstrapCore\BootstrapCore.csproj", "{6387675B-4E69-484E-A666-8B97F0DDE499}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carousel", "Carousel\Carousel.csproj", "{FF97D056-9A43-4468-B584-672E2D23A375}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Carousel", "Carousel\Carousel.csproj", "{FF97D056-9A43-4468-B584-672E2D23A375}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbApp", "DbApp\DbApp.csproj", "{AB88D89F-41F9-426C-9FB6-5BC73C185336}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FF97D056-9A43-4468-B584-672E2D23A375}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF97D056-9A43-4468-B584-672E2D23A375}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF97D056-9A43-4468-B584-672E2D23A375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB88D89F-41F9-426C-9FB6-5BC73C185336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB88D89F-41F9-426C-9FB6-5BC73C185336}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB88D89F-41F9-426C-9FB6-5BC73C185336}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB88D89F-41F9-426C-9FB6-5BC73C185336}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

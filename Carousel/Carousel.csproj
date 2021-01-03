@@ -5,12 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\assets\" />
-    <Folder Include="wwwroot\images\" />
-    <Folder Include="wwwroot\scss\" />
+    <Content Remove="compilerconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\assets\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
     <None Include="Views\Home\Index.cshtml" />
     <None Include="Views\Home\TH_Test.cshtml" />
     <None Include="Views\News\Index.cshtml" />

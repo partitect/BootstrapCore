@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Urunler>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="ui middle aligned selection list">
+    @foreach (var item in Model)
+    {
+    <div class="item">
+        @item.Name - @item.Price TL - Kategorisi:
+        @if (@item.CategoryID.HasValue)
+        {
+            @item.Category.Name
+        }
+        else
+        {
+
+        }
+    </div>
+    }
+</div>

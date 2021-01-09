@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Slider>
+
+<section class="hero-section">
+    <div class="hero-slider owl-carousel">
+        @foreach (var item in Model)
+        {
+            var firstWord = item.title.Substring(0, item.title.IndexOf(" "));
+            <div class="hs-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hs-text">
+                                <h2><span>@firstWord</span> @item.title.Replace(firstWord,"")</h2>
+                                <p>@item.desc</p>
+                                <a href="#" class="site-btn">@item.btnTitle1</a>
+                                <a href="#" class="site-btn sb-c2">@item.btnTitle2</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="hr-img">
+                                <img src="@item.imagePath" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>

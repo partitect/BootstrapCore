@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DbApp", "DbApp\DbApp.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBFirstSpp", "DBFirstSpp\DBFirstSpp.csproj", "{419C686B-FC8C-4C72-990A-C7A6D79C9DCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolMusic", "SolMusic\SolMusic.csproj", "{97443429-AFDE-4DF6-B934-BA0233752D7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{419C686B-FC8C-4C72-990A-C7A6D79C9DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{419C686B-FC8C-4C72-990A-C7A6D79C9DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{419C686B-FC8C-4C72-990A-C7A6D79C9DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97443429-AFDE-4DF6-B934-BA0233752D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97443429-AFDE-4DF6-B934-BA0233752D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97443429-AFDE-4DF6-B934-BA0233752D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97443429-AFDE-4DF6-B934-BA0233752D7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
